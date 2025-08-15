@@ -1,7 +1,7 @@
 
 import upload from "../Middleware/Multer.js"
 import express from "express"
-import {removeproduct,uploadProduct,getproducts,singleproduct} from "../controler/Productcontroler.js"
+import {removeproduct,uploadProduct,getproducts,singleproduct} from "../Controler/Productcontroler.js"
 const productroute=express.Router();
 
 productroute.post(
