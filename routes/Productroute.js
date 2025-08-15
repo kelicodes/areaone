@@ -1,5 +1,5 @@
 
-import upload from "../middleware/multer.js"
+import upload from "../Middleware/Multer.js"
 import express from "express"
 import {removeproduct,uploadProduct,getproducts,singleproduct} from "../controler/Productcontroler.js"
 const productroute=express.Router();

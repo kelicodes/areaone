@@ -1,4 +1,4 @@
-import productmodel from "../models/Productmodel.js"
+import productmodel from "../Models/Productmodel.js"
 import upload from "../config/Cloudinary.js"
 // Use this instead of the named import
 import pkg from 'cloudinary';
