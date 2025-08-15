@@ -1,6 +1,6 @@
 import express from "express"
-import productroute from "./routes/productroute.js"
-import userRoute from "./routes/userroute.js"
+import productroute from "./routes/Productroute.js"
+import userRoute from "./routes/Userroute.js"
 import connectdb from "./config/mongodb.js"
 import "dotenv/config"
 import cors from "cors";
