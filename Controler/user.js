@@ -41,7 +41,7 @@ export const Login=async(req,res)=>{
 			const token=JWT.sign({id:user._id}, process.env.secretkey)
 
 			res.cookie("token", token)
-			return res.json({success:true,message:"log in successfull", role : "user"})
+			return res.json({success:true,message:"log in successfull",token, role:"user"})
 		}
 	}catch(error){
 		return res.json({success:false,message:"error in login controller"})
@@ -67,7 +67,7 @@ export const adminlogin=async(req,res)=>{
 			const token=JWT.sign(email+password,process.env.MYSEC)
 			return res.json({success:true,token,message:"admin loged in", role:"admin"})
 		}else{
-			return res.json({success:false,message:"Invaliud credentials"})
+			return res.json({success:false,message:"Invalid credentials"})
 		}
 	}catch(error){
 		console.log(error.message)
