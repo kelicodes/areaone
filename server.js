@@ -13,7 +13,7 @@ app.use(express.json())
 
 
 app.use(cors({
-  origin: "https://area1-u88j.vercel.app/",
+  origin: "https://area1-u88j.vercel.app",
   credentials: true
 }));
 app.use('/products',productroute)
